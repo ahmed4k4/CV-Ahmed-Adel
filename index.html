@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/profile.jpg">
+    <title>أحمد عادل فكري عبدالقادر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- الخلفية المتحركة -->
+    <div class="animated-bg"></div>
+    <div class="particles"></div>
+    
+    <div class="container">
+        <!-- الشريط الجانبي -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <div class="profile-img">
+                    <img src="images/profile.jpg" alt="صورة أحمد عادل">
+                    <div class="img-border-animation"></div>
+                </div>
+                <h1 class="name">أحمد عادل فكري عبد القادر</h1>
+                <p class="title">طالب هندسة حاسبات</p>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#about" class="active"><i class="fas fa-user"></i> عني</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> التعليم</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> المهارات</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> المشاريع</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بي</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social-container">
+                <h3 class="social-title">تواصل معي</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100005176173764&locale=ar_AR" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-adel-86438a2a2" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/ahmed4k4" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://x.com/ahmed4k4" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <section id="about" class="section active">
+                <div class="about-header">
+                    <h2 class="section-title animate-title">عنّي</h2>
+                    <p class="about-text">أنا طالب في هندسة الحاسبات بأكاديمية مودرن، أبلغ من العمر 20 عامًا وأقيم في القاهرة، مصر. أسعى لتطوير مهاراتي في مجال البرمجة وتكنولوجيا المعلومات، وأملك شغفًا كبيرًا بالتعلم والتطوير في مجال هندسة البرمجيات. أحب العمل في فريق ولدي قدرة على حل المشكلات بطريقة إبداعية.</p>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <p><span>العمر:</span> 20 سنة</p>
+                    </div>
+                    <div class="info-item">
+                        <p><span>البريد:</span> ahmad4k4@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <p><span>الهاتف:</span> 01061219234</p>
+                    </div>
+                    <div class="info-item">
+                        <p><span>العنوان:</span> القاهرة، مصر</p>
+                    </div>
+                </div>
+                
+                <button class="download-btn" onclick="downloadPDF()">
+                    <i class="fas fa-download"></i> تحميل السيرة الذاتية
+                </button>
+            </section>
+            
+            <section id="education" class="section">
+                <h2 class="section-title animate-title">التع<span>ليم</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - الحاضر</div>
+                        <h3 class="timeline-title">بكالوريوس في هندسة الحاسبات</h3>
+                        <p class="timeline-company">أكاديمية مودرن</p>
+                        <p class="timeline-desc">دراسة متخصصة في مجال هندسة الحاسبات والبرمجيات، مع التركيز على الخوارزميات وهياكل البيانات، أنظمة التشغيل، والشبكات الحاسوبية.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019 - 2022</div>
+                        <h3 class="timeline-title">شهادة الثانوية العامة</h3>
+                        <p class="timeline-company">مدرسة النهضة الحديثة</p>
+                        <p class="timeline-desc">شعبة علمي رياضة ، مع التركيز على مواد الرياضيات والفيزياء.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="section">
+                <h2 class="section-title animate-title">المهار<span>ات</span></h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>برمجة Python</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>تطوير الويب (HTML/CSS/JS)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>قواعد البيانات (SQL/MYSQL)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>برمجة (C++/C#/C)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>برمجة تطبيقات الهاتف Flutter</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>برمجة المتحكمات الدقيقه (Microcontroller)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>برمجة الاردوينو و esp32 وغيرها</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>تنفيذ تصاميم 3D (3DMAX)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>اللغة الإنجليزية</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="section">
+                <h2 class="section-title animate-title">مشاري<span>عي</span></h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="مشروع نظام إدارة">
+                        <div class="portfolio-overlay">
+                            <h3>نظام إدارة الطلاب</h3>
+                            <p>نظام لإدارة بيانات الطلاب باستخدام Python وSQLite</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="موقع ويب">
+                        <div class="portfolio-overlay">
+                            <h3>موقع شخصي</h3>
+                            <p>موقع شخصي تفاعلي باستخدام HTML, CSS, JavaScript</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="مشروع إلكترونيات">
+                        <div class="portfolio-overlay">
+                            <h3>نظام إنذار</h3>
+                            <p>نظام إنذار باستخدام Arduino وبرمجة C++</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="section">
+                <h2 class="section-title animate-title">اتص<span>ل بي</span></h2>
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="الموضوع">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
