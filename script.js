@@ -28,7 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // إظهار القسم المطلوب
             const target = this.getAttribute('href');
-            document.querySelector(target).classList.add('active');
+            const targetSection = document.querySelector(target);
+            targetSection.classList.add('active');
+            
+            // إضافة Scroll Smooth للهواتف
+            if (document.body.classList.contains('mobile-device')) {
+                setTimeout(() => {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 100);
+            }
             
             // إعادة تحريك العناصر عند التبديل
             animateElements();
@@ -132,9 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
-        // أو يمكنك استخدام هذا إذا كنت تريد فتح الملف في نافذة جديدة
-        // window.open(pdfUrl, '_blank');
     }
     
     // تعيين الحدث لزر التحميل
