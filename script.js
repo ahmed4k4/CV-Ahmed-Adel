@@ -34,9 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // إضافة Scroll Smooth للهواتف
             if (document.body.classList.contains('mobile-device')) {
                 setTimeout(() => {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                     const elementPosition = targetSection.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - 20; // 10px إزاحة إضافية
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
                     });
                 }, 100);
             }
