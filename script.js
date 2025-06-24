@@ -11,7 +11,6 @@ function detectDevice() {
 // تشغيل الكشف عند التحميل
 document.addEventListener('DOMContentLoaded', function() {
     detectDevice();
-    document.addEventListener('DOMContentLoaded', function() {
     // تبديل الأقسام عند النقر على القائمة
     const menuLinks = document.querySelectorAll('.menu a');
     const sections = document.querySelectorAll('.section');
@@ -219,5 +218,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // تعيين الخلفية الافتراضية
     changeBackground('#about');
-});
 });
