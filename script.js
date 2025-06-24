@@ -1,4 +1,17 @@
+// كشف نوع الجهاز وإضافة كلاس مناسب
+function detectDevice() {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+        document.body.classList.add('mobile-device');
+    } else {
+        document.body.classList.add('desktop-device');
+    }
+}
+
+// تشغيل الكشف عند التحميل
 document.addEventListener('DOMContentLoaded', function() {
+    detectDevice();
+    document.addEventListener('DOMContentLoaded', function() {
     // تبديل الأقسام عند النقر على القائمة
     const menuLinks = document.querySelectorAll('.menu a');
     const sections = document.querySelectorAll('.section');
@@ -206,4 +219,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // تعيين الخلفية الافتراضية
     changeBackground('#about');
+});
 });

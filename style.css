@@ -851,3 +851,143 @@ body {
         font-size: 20px;
     }
 }
+
+/* Mobile-Specific Enhancements */
+@media (max-width: 768px) {
+    /* تحسين الشريط الجانبي */
+    .sidebar {
+        padding: 15px;
+        max-height: none;
+        position: relative;
+        backdrop-filter: none;
+        background-color: rgba(44, 62, 80, 0.9);
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .name {
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 13px;
+    }
+    
+    /* تحسين القائمة */
+    .menu {
+        margin: 20px 0;
+    }
+    
+    .menu a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* تحسين المحتوى الرئيسي */
+    .main-content {
+        padding: 20px 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    /* تحسين قسم "نبذة عني" */
+    .about-text {
+        font-size: 16px;
+        text-align: right;
+    }
+    
+    /* تحسين الأزرار */
+    .download-btn, .submit-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    
+    /* تحسين الجدول الزمني */
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item::before {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* تحسين المشاريع */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item img {
+        height: 200px;
+    }
+    
+    /* تحسين نموذج الاتصال */
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* تحسين الروابط الاجتماعية */
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-link {
+        flex: 1 0 calc(50% - 10px);
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 13px;
+        justify-content: center;
+    }
+    
+    .social-link i {
+        margin-right: 5px;
+    }
+    
+    /* تحسين الرسائل التنبيهية */
+    .alert-message {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-link {
+        flex: 1 0 100%;
+    }
+    
+    .timeline-title {
+        font-size: 18px;
+    }
+    
+    .timeline-company {
+        font-size: 14px;
+    }
+    
+    .timeline-desc {
+        font-size: 14px;
+    }
+    
+    .skill-info span {
+        font-size: 14px;
+    }
+    
+    .category-title {
+        font-size: 20px;
+    }
+}
+
