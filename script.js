@@ -111,12 +111,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // تحميل السيرة الذاتية
     function downloadPDF() {
         // يمكنك استبدال هذا الرابط برابط ملف PDF الخاص بك
-        const pdfUrl = 'downloads/cv.pdf';
+        const pdfUrl = 'downloads/Ahmed-Adel-Fekry-Abdelkader-ATS.pdf';
         
         // إنشاء رابط تحميل
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'CV_Ahmed_Adel.pdf';
+        link.download = 'Ahmed-Adel-Fekry-Abdelkader-ATS.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const originalText = submitBtn.innerHTML;
             
             submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             
             try {
                 const response = await fetch(this.action, {
@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     successMsg.className = 'alert-message success';
                     successMsg.innerHTML = `
                         <i class="fas fa-check-circle"></i>
-                        <h3>تم الإرسال بنجاح!</h3>
-                        <p>شكراً لتواصلك، سأرد عليك في أقرب وقت.</p>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting me. I'll get back to you soon.</p>
                     `;
                     document.body.appendChild(successMsg);
                     
@@ -183,8 +183,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 errorMsg.className = 'alert-message error';
                 errorMsg.innerHTML = `
                     <i class="fas fa-exclamation-circle"></i>
-                    <h3>حدث خطأ!</h3>
-                    <p>لم يتم إرسال الرسالة، يرجى المحاولة مرة أخرى.</p>
+                    <h3>Error!</h3>
+                    <p>Message not sent. Please try again.</p>
                 `;
                 document.body.appendChild(errorMsg);
                 
