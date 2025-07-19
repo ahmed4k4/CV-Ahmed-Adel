@@ -23,7 +23,9 @@ Welcome to my personal portfolio website!
 
 ## 📸 Screenshot Preview
 
-![Website Preview](https://ahmed4k4.github.io/CV-Ahmed-Adel/images/profile.jpg)
+<p align="center">
+  <img src="https://ahmed4k4.github.io/CV-Ahmed-Adel/images/profile.jpg" alt="Website Preview" width="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</p>
 
 ---
 
@@ -41,13 +43,16 @@ Welcome to my personal portfolio website!
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/ahmed-adel-86438a2a2)  
 - 💻 [GitHub](https://github.com/ahmed4k4)  
-- 📧 ahmedadel@example.com *(replace with your real email if public)*  
+- 📧 ahmad4k4@gmail.com  
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+All rights reserved © 2025 **Ahmed Adel**  
+Unauthorized copying, modification, distribution, or use of this code or any part of this project is strictly prohibited without prior written permission from the author.
+
+For inquiries, contact: **ahmad4k4@gmail.com**
 
 ---
 
